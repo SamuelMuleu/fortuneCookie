@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(22, 111, 23, 1) 8%,
+    rgba(19, 2, 56, 1) 13%,
+    rgba(21, 81, 32, 1) 23%,
+    rgba(20, 34, 46, 1) 42%,
+    rgba(21, 82, 32, 1) 62%,
+    rgba(20, 56, 40, 1) 80%,
+    rgba(19, 2, 56, 1) 93%
+  );
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+main {
+  background: #ffff;
+  width: min(40rem, 90%);
+  padding: 48px 64px 64px 64px;
+}
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #34355b;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+main p {
+  color: #34355b;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 0.8rem;
+}
+.hide {
+  display: none;
+}
+.screen1 button:hover {
+  animation: treme 0.2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes treme {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+button {
+  border: none;
+  background: #ffff;
+}
+
+/*screen2*/
+
+.screen2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #34355b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#textScreen2 {
+  animation: moveUp 2s;
+  animation-iteration-count: 1;
+  
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  width: 27rem;
+}
+.screen2 p {
+  color: #000;
+  text-align: center;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.screen2 img {
+  width: 27rem;
+}
+.screen2 button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+
+  border-radius: 4px;
+  background: #074203;
+  width: 17rem;
+  height: 5rem;
+  margin-top: 3.3rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+.screen2 button:hover {
+  background: #0a2b07;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0rem);
+
+    transform: scale(0.1);
+  }
+35%{
+  transform: translateY(11rem);
+}
+  50% {
+    transform: translateY(11rem);
+  }  
+  100% {
+    transform: translateY(11rem);
+  
+
+    transform: scale(1);
+  }
+}
